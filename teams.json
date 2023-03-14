@@ -1,0 +1,6 @@
+[
+ { "teamName": "Team A", "won": 1, "lost": 1, "points": 3 },
+ { "teamName": "Team B", "won": 2, "lost": 0, "points": 0 },
+ { "teamName": "Team C", "won": 0, "lost": 2, "points": 6 },
+ { "teamName": "Team C", "won": 0, "lost": 2, "points": 4 }
+]

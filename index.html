@@ -4,7 +4,85 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <title>Foosball tournament</title>
  </head>
- <body></body>
+ <body>
+  <main>
+   <header>
+    <div class="login">
+     <input type="checkbox" name="admin_login" id="admin_login" />
+     <label for="admin_login">Login as admin</label>
+    </div>
+   </header>
+   <!-- Add team form -->
+   <form id="team-form" class="hide">
+    <h3>Add team</h3>
+
+    <div class="form-name">
+     <label for="team_name">Team name</label>
+     <input name="team_name" type="text" required placeholder="Ex.Team A" class="input" />
+    </div>
+
+    <div class="form-members">
+     <label for="team_members">Team members (first names)</label>
+     <input name="team_members" type="text" required placeholder="Ex.Tore" class="input" />
+     <input name="team_members" type="text" required placeholder="Ex.Pedro" class="input" />
+    </div>
+
+    <div class="form-btn">
+     <button>Add team</button>
+    </div>
+    <p id="form-message" class="hide">Only a maximum of 8 teams can be added</p>
+   </form>
+   <!-- /Add team form -->
+
+   <section id="scoreboard-section">
+    <h2>Scoreboard</h2>
+    <div class="scoreboard-container">
+     <table id="scoreboard-table">
+      <tbody>
+       <tr>
+        <td class="default hide"></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+
+   <!-- Table -->
+
+   <section id="leaderboard-section">
+    <h2>Leaderboard</h2>
+
+    <table id="teams_table">
+     <thead>
+      <tr>
+       <th>#</th>
+       <th>Team</th>
+       <th>Won</th>
+       <th>Lost</th>
+       <th>Points</th>
+      </tr>
+     </thead>
+     <tbody></tbody>
+    </table>
+    <div class="empty">
+     <h3>No teams are currently added</h3>
+     <p>Please update scoreboard</p>
+    </div>
+
+    <template id="team">
+     <tr>
+      <td data-field="place">#</td>
+      <td data-field="team">Team</td>
+      <td data-field="won">Won</td>
+      <td data-field="lost">Lost</td>
+      <td data-field="points">Points</td>
+     </tr>
+    </template>
+   </section>
+  </main>
+  <script src="app.js"></script>
+ </body>
 </html>

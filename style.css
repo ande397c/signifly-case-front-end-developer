@@ -1,0 +1,198 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+main {
+ margin-inline: 5%;
+}
+
+/* Header */
+
+.login {
+ display: flex;
+ gap: 0.4rem;
+ margin-top: 1rem;
+ padding: 0.5rem;
+}
+
+.login:hover {
+ cursor: pointer;
+}
+
+/* -- Form -- */
+
+#team-form {
+ padding: 1rem;
+ width: fit-content;
+ margin-inline: auto;
+ border: 1px solid black;
+ margin-top: 1rem;
+ border-radius: 0.75rem;
+ transition: 0.5s all;
+}
+
+#team-form:hover {
+ transform: translateY(-7px);
+}
+
+#team-form input::placeholder {
+ font-style: italic;
+}
+#team-form input {
+ padding: 0.2rem;
+ margin-top: 0.5rem;
+}
+
+#team-form h3 {
+ text-align: center;
+}
+
+#team-form div {
+ margin-top: 1rem;
+}
+
+#team-form label {
+ display: block;
+}
+
+#team-form button {
+ width: 7rem;
+ height: 2rem;
+ text-align: center;
+ background: none;
+ outline: none;
+ border: 1px solid #4992a3;
+ background-color: #4992a3;
+ color: white;
+ border-radius: 0.75rem;
+}
+
+#team-form button:hover {
+ cursor: pointer;
+}
+
+.form-btn {
+ display: flex;
+ justify-content: center;
+}
+
+#form-message {
+ margin-top: 0.5rem;
+ text-align: center;
+ font-weight: bold;
+ color: red;
+}
+/* </Form> */
+
+/* -- Table (general)-- */
+
+table {
+ border-collapse: collapse;
+ width: 100%;
+ margin-inline: auto;
+}
+
+th,
+tr {
+ width: 50px;
+ height: 50px;
+ text-align: center;
+}
+
+th,
+td {
+ border: 1px solid;
+}
+
+/*  /Table (general) */
+
+/* Scoreboard section */
+
+#scoreboard-section {
+ margin-top: 2rem;
+}
+#scoreboard-section h2 {
+ text-align: center;
+}
+
+#scoreboard-table {
+ margin-top: 0.5rem;
+}
+
+.scoreboard-container {
+ overflow-x: auto;
+}
+
+#scoreboard-table td {
+ padding: 7px;
+}
+
+#scoreboard-table div {
+ font-weight: bold;
+ font-size: 1rem;
+}
+
+#scoreboard-table span:last-child {
+ margin-left: 0.4rem;
+}
+
+#scoreboard-table input {
+ min-width: 40%;
+ max-width: 60%;
+ text-align: center;
+ font-size: 1rem;
+}
+
+/* / Scoreboard section */
+
+/* Leaderboard section */
+
+#leaderboard-section {
+ margin-block: 2rem;
+}
+
+#leaderboard-section h2 {
+ text-align: center;
+ margin-block: 1rem;
+}
+
+/* /Leaderboard section */
+
+/* Teams table */
+#teams_table th {
+ background-color: #4992a3;
+ color: white;
+}
+
+#teams_table tr:nth-child(even) {
+ background-color: #b6b6b6;
+}
+
+/* -- Custom classes --*/
+
+.show {
+ display: block;
+}
+
+.hide {
+ display: none;
+}
+
+.default {
+ background: #b6b6b6;
+ /* height: 40px;
+ width: 50px; */
+}
+
+.empty {
+ text-align: center;
+ margin-top: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+ #team-form .form-members input:last-child {
+  margin-left: 1rem;
+ }
+}
